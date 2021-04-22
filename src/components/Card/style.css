@@ -1,0 +1,15 @@
+.card {
+  background: #fff;
+  box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+  width: 90%;
+  margin: auto;
+}
+
+.card .card-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #1e1f36;
+}

@@ -1,0 +1,19 @@
+.title {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #1e1f36;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 18px;
+  color: #787887;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.active .text {
+  max-height: 100px;
+}
