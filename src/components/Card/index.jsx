@@ -3,9 +3,9 @@ import Accordion from '../Accordion';
 
 const Card = ({ title }) => (
   <div className="card">
-    <h2 className="card-title">
+    <h1 className="card-title">
       {title}
-    </h2>
+    </h1>
     <Accordion
       title="How many team members can I invite?"
       text="You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan."
