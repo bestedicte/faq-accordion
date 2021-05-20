@@ -1,9 +1,11 @@
 .card {
   background: #fff;
   box-shadow: 0 50px 50px -20px rgba(53, 18, 122, 0.497159);
-  border-radius: 23px;
+  border-radius: 1.5rem;
   width: 90%;
   margin: auto;
+  padding: 7.25rem 1.5rem 3rem;
+  position: relative;
 }
 
 .card .card-title {
@@ -12,4 +14,31 @@
   font-size: 2rem;
   line-height: 2rem;
   color: #1e1f36;
+  margin-bottom: 2.5rem;
+}
+
+.card::before {
+  content: url("../../assets/Image.svg");
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-54%, -50%);
+}
+
+@media only screen
+  and (min-width: 760px) {
+  .card {
+    max-width: 600px;
+  }
+
+  @media screen
+    and (min-width: 1200px) {
+    .card {
+      max-width: 57.5rem;
+    }
+
+    .card::before {
+      width: 29.5rem;
+    }
+  }
 }

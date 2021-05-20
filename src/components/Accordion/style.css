@@ -1,10 +1,13 @@
-.title {
-  font-weight: 700;
+.accordion .title {
+  font-weight: 400;
   font-size: 0.875rem;
   color: #1e1f36;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.text {
+.accordion .text {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 18px;
@@ -12,8 +15,24 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid #e8e8ea;
 }
 
 .active .text {
   max-height: 100px;
+  padding-bottom: 1rem;
+}
+
+.active .title {
+  font-weight: 700;
+
+}
+
+.accordion .title::after {
+  content: url('/src/assets/arrow.svg');
+  display: block;
+}
+
+.active .title::after {
+  transform: rotate(180deg);
 }
